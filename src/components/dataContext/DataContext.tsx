@@ -21,14 +21,13 @@ export default function DataContext({ children }: ChildrenProp) {
   let [error, setError] = useState<string | null>(null);
 
   async function getData() {
+    const apiUrl = import.meta.env.VITE_OMDB_API_URL;
     const apiKey = import.meta.env.VITE_OMDB_API_KEY;
     setLoading(true);
     setError(null);
 
     try {
-      let res = await fetch(
-        `https://www.omdbapi.com/?apikey=${apiKey}&s=${input}`
-      );
+      let res = await fetch(`${apiUrl}/?apikey=${apiKey}&s=${input}`);
 
       if (!res.ok) {
         throw new Error("Failed to fetch data from OMDB API");
