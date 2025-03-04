@@ -27,7 +27,7 @@ export default function MapMovie() {
       <div className="row row-cols-1 row-cols-md-3 g-4">
         {movie.length > 0
           ? movie.map((items: any) => (
-              <div className="col">
+              <div className="col" key={items.imdbID}>
                 <div className="card h-100">
                   <img src={items.Poster} className="card-img-top" alt="..." />
                   <div className="card-body">
