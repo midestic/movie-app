@@ -1,0 +1,41 @@
+.searchComp {
+  width: 100%;
+  margin-top: 40px;
+}
+
+.searchDiv {
+  width: 30%;
+  border: 3px solid blue;
+  margin: auto;
+  border-radius: 20px;
+}
+
+.searchInput {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+@media (max-width: 768px) {
+  .searchComp {
+    width: 100%;
+    margin-top: 40px;
+  }
+
+  .searchDiv {
+    width: 60%;
+    border: 3px solid blue;
+    margin: auto;
+    border-radius: 20px;
+  }
+
+  .searchInput {
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 20px;
+  }
+}
