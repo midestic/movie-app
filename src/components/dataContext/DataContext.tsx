@@ -27,7 +27,7 @@ export default function DataContext({ children }: ChildrenProp) {
 
     try {
       let res = await fetch(
-        `http://www.omdbapi.com/?apikey=${apiKey}&s=${input}`
+        `https://www.omdbapi.com/?apikey=${apiKey}&s=${input}`
       );
 
       if (!res.ok) {
